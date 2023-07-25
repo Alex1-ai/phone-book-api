@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
+app.use(express.static('build'))
 
 
 app.use(express.json())
@@ -42,10 +43,10 @@ let persons = [
 ]
 
 
-app.get('/', (request, response)=>{
+// app.get('/', (request, response)=>{
 
-    response.send('<h2>Phone Book API</h2>')
-})
+//     response.send('<h2>Phone Book API</h2>')
+// })
 
 app.get('/api/persons', (request, response)=>{
     response.json(persons)
