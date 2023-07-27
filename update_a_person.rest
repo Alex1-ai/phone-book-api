@@ -1,0 +1,7 @@
+PUT http://localhost:3001/api/persons/64c14e0816aa47f06fdd8f4
+Content-Type: application/json
+
+{
+    "name":"Schedrach Okanas",
+    "number":"23-328832-2222"
+}
